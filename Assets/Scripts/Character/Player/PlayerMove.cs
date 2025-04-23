@@ -15,12 +15,15 @@ namespace  Character.Control{
         [SerializeField]
         private float currentSpeed = 2f;
         
+        
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
+           
         }
         public void HandleMovement(Vector3 direction)
         {
+            print(direction);
             Vector3 dir = Vector3.zero;
             if (controller.isGrounded)
             {

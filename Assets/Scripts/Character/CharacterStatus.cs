@@ -15,6 +15,7 @@ namespace  Character.Control{
         public float HP = 100;
         public float VP = 100;
         public float XP = 0;
+        public float attackValue = 10;
 
         private void Awake()
         {
